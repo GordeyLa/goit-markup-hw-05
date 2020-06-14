@@ -59,6 +59,7 @@ img {
   min-height: 80px;
   width: 100%;
   background-color: var(--white-color);
+  z-index: 2;
 }
 
 /* Logo */
