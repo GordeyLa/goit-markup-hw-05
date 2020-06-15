@@ -102,6 +102,8 @@ img {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
@@ -115,7 +117,20 @@ img {
   border-bottom: 2px solid var(--accent-color);
   border-radius: 2px;
 }
+/*
+.site-nav.thison::after {
+  content: "";
 
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid var(--accent-color);
+ 
+}
+*/
 .cont-nav {
   display: flex;
   margin-left: auto;
@@ -130,6 +145,9 @@ img {
   font-size: 14px;
   line-height: 1.2x;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cont-nav .icon {
   fill: currentColor;
@@ -374,6 +392,8 @@ img {
   border-radius: 50%;
   background-color: var(--white-color);
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover,
 .socials-link:focus {
@@ -401,6 +421,9 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo-client:hover,
 .logo-client:focus {
@@ -484,6 +507,9 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--white-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon:focus,
 .social-icon:hover {
@@ -553,6 +579,9 @@ img {
   padding-left: 22px;
   padding-right: 22px;
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-nav button:hover,
@@ -561,16 +590,7 @@ img {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
-/*абзац ховер
-.project-list .title {
-  color: var(--secondary-text-color);
-}
 
-.project-list .text:hover {
-  color: var(--white-color);
-  background-color: var(--accent-color);
-}
-*/
 .project-list {
   padding-left: 0;
   list-style: none;
@@ -629,7 +649,7 @@ img {
 }
 
 .project-list .text {
-  background: rgba(33, 150, 243, 0.9);
+  background-color: rgba(33, 150, 243, 0.9);
   color: var(--white-color);
   font-weight: 400;
   font-size: 18px;
@@ -644,12 +664,18 @@ img {
   top: 0;
   left: -1px;
   right: -1px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   width: 370px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flex-container {
   display: flex;
